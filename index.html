@@ -20,6 +20,10 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
+    img{
+      max-width: 100%;
+    }
+
     .social-media {
       list-style-type: none;
       padding: 0;
@@ -27,6 +31,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-top: 0;
     }
 
     .social-media li {
@@ -41,11 +46,32 @@
       background-color: #f2f2f27e;
       border-radius: 5px;
       font-size: 30px;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease, padding 0.3s ease;
       width: 500px;
     }
     .social-media li a:hover {
       background-color: #ffffff;
+      padding: 5px;
+    }
+
+    .alt-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 500px;
+    }
+
+    .alt-links a:first-child {
+      flex: 5; /* 75% of the space */
+    }
+
+    .alt-links a:last-child {
+      flex: 2; /* 25% of the space */
+    }
+
+    .header{
+      color: #FFF;
+      margin-bottom: 0;
     }
 
     #title{
@@ -63,41 +89,37 @@
       background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%3Cfilter%20id%3D%22noise%22%3E%20%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%20%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220.13671875%200%200%200%200%200%200.109375%200%200%200%200%200%200.1796875%200%200%200%200%200%200.609375%200%22%20%2F%3E%20%3C%2Ffilter%3E%20%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%220.4%22%20%2F%3E%3C%2Fsvg%3E')
     }
 
-    /* Media Queries */
-    /*
-    @media (min-width: 768px) {
-      .social-media {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-      .social-media li {
-        margin: 0 10px;
-        flex-basis: 45%;
-        max-width: 200px;
-      }
-    }
-    */
   </style>
 </head>
 <body>
   <div class="container" id="full">
+    <img src="lonnStreak.png">
     <div class="container" id="title">
       <h1>Lonny's Links</h1>
     </div>
     <ol class="social-media">
-      <li><a href="https://lonnyk.github.io/comms" target="_blank">Commissions</a></li>
-      <li><a href="https://twitter.com/Lonny_K_Art" target="_blank">Twitter</a></li>
-      <li><a href="https://www.furaffinity.net/user/lonnyk" target="_blank">FurAffinity</a></li>
-      <li><a href="https://www.deviantart.com/lonnyk" target="_blank">DeviantArt</a></li>
-      <li><a href="https://www.instagram.com/lonny_k_art/" target="_blank">Instagram</a></li>
       <li><a href="https://discord.gg/YDts4Yqvqr" target="_blank">Discord Server</a></li>
-      <li><a href="https://www.pillowfort.social/LonnyK" target="_blank">PillowFort</a></li>
+      <li><a href="comms.html" target="_blank">Commissions</a></li>
+    </ol>
+    <h1 class="header">Social Media</h1>
+    <ol class="social-media">
+      <li><a href="https://bsky.app/profile/lonnyk.bsky.socual" target="_blank">BlueSky</a></li>
+      <li><span class="alt-links">
+        <a href="https://twitter.com/Lonny_K_Art" target="_blank">Twitter</a>
+        <a href="https://twitter.com/lonnyk67279" target="_blank">(NSFW)</a>
+      </span></li>
+      <li><span class="alt-links">
+        <a href="https://www.furaffinity.net/user/lonnyk" target="_blank">FurAffinity</a>
+        <a href="https://www.furaffinity.net/user/lonnykalt" target="_blank">(Alt)</a>
+      </span></li>
+      <li><span class="alt-links">
+        <a href="https://www.deviantart.com/lonnyk" target="_blank">DeviantArt</a>
+        <a href="https://www.deviantart.com/lonnykalt" target="_blank">(Alt)</a>
+      </span></li>
       <li><a href="https://www.tumblr.com/blog/lonnyk" target="_blank">Tumblr</a></li>
       <li><a href="https://itaku.ee/profile/lonnyk" target="_blank">Itaku</a></li>
       <li><a href="https://chitter.xyz/@LonnyK" target="_blank">Mastodon</a></li>
-      <li><a href="https://ko-fi.com/lonnyk" target="_blank">Ko-Fi</a></li>
-      <li><a href="https://www.example.com/link12" target="_blank">InkBunny</a></li>
+      <li><a href="https://inkbunny.com/lonnyk" target="_blank">InkBunny</a></li>
     </ol>
   </div>
 </body>
