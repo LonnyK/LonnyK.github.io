@@ -13,6 +13,7 @@
     }
     .container {
       max-width: 600px;
+      width: 60vw;
       margin-left: auto;
       margin-right: auto;
       padding: 30px;
@@ -47,7 +48,8 @@
       border-radius: 5px;
       font-size: 30px;
       transition: background-color 0.3s ease, padding 0.3s ease;
-      width: 500px;
+      width: 50vw;
+      max-width: 500px;
     }
     .social-media li a:hover {
       background-color: #ffffff;
@@ -58,15 +60,16 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 50vw;
       max-width: 500px;
     }
 
     .alt-links a:first-child {
-      flex: 5; /* 75% of the space */
+      flex: 5;
     }
 
     .alt-links a:last-child {
-      flex: 2; /* 25% of the space */
+      flex: 2; 
     }
 
     .header{
@@ -82,8 +85,13 @@
 				  1px -1px 0 #000,
 				  -1px -1px 0 #000;
       padding: 0;
-    }
 
+      background-image: url('lonnStreak.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
     #full{
       margin-top: 30px;
       background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%3Cfilter%20id%3D%22noise%22%3E%20%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%20%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220.13671875%200%200%200%200%200%200.109375%200%200%200%200%200%200.1796875%200%200%200%200%200%200.609375%200%22%20%2F%3E%20%3C%2Ffilter%3E%20%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%220.4%22%20%2F%3E%3C%2Fsvg%3E')
@@ -93,7 +101,6 @@
 </head>
 <body>
   <div class="container" id="full">
-    <img src="lonnStreak.png">
     <div class="container" id="title">
       <h1>Lonny's Links</h1>
     </div>
